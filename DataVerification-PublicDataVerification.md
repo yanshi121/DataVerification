@@ -13,7 +13,7 @@ pdv = PublicDataVerification()
 或者
 
 ```python
-from data_verification.admin_division import AdminDivision
+from data_verification.public.admin_division import AdminDivision
 
 ad = AdminDivision()
 ```
@@ -27,7 +27,7 @@ ad = AdminDivision()
     * code:编码
 
 ```python
-from data_verification.admin_division import AdminDivision
+from data_verification.public.admin_division import AdminDivision
 
 ad = AdminDivision()
 ad.province_division_2007("code")
@@ -40,7 +40,7 @@ ad.province_division_2007("code")
     * code:编码
 
 ```python
-from data_verification.admin_division import AdminDivision
+from data_verification.public.admin_division import AdminDivision
 
 ad = AdminDivision()
 ad.city_division_2007("code")
@@ -53,7 +53,7 @@ ad.city_division_2007("code")
     * code:编码
 
 ```python
-from data_verification.admin_division import AdminDivision
+from data_verification.public.admin_division import AdminDivision
 
 ad = AdminDivision()
 ad.county_division_2007("code")
@@ -66,7 +66,7 @@ ad.county_division_2007("code")
     * code:编码
 
 ```python
-from data_verification.admin_division import AdminDivision
+from data_verification.public.admin_division import AdminDivision
 
 ad = AdminDivision()
 ad.division_2007("code")
@@ -87,7 +87,7 @@ pdv = PublicDataVerification()
 或者
 
 ```python
-from data_verification.compare import Compare
+from data_verification.public.compare import Compare
 
 c = Compare()
 ```
@@ -103,7 +103,7 @@ c = Compare()
     * pattern:验证模式，默认为0，0:是否小于，1:是否大于，2:是否等于，3:是否小于等于，4:是否大于等于，5:是否不等于
 
 ```python
-from data_verification.compare import Compare
+from data_verification.public.compare import Compare
 
 c = Compare()
 c.verify_compare(1, 2, 0)
@@ -118,7 +118,7 @@ c.verify_compare(1, 2, 0)
     * pattern:验证模式，默认为0，0:是否小于，1:是否大于，2:是否等于，3:是否小于等于，4:是否大于等于，5:是否不等于
 
 ```python
-from data_verification.compare import Compare
+from data_verification.public.compare import Compare
 
 c = Compare()
 c.verify_length("as", 2, 0)
@@ -134,7 +134,7 @@ c.verify_length("as", 2, 0)
       sha3_384，sha3_512，shake_128，shake_256，blake2b，blake2s，md5
 
 ```python
-from data_verification.compare import Compare
+from data_verification.public.compare import Compare
 
 c = Compare()
 c.compare_hashes("as", "")
@@ -153,7 +153,7 @@ pdv = PublicDataVerification()
 或者
 
 ```python
-from data_verification.coordinates import Coordinates
+from data_verification.public.coordinates import Coordinates
 
 c = Coordinates()
 ```
@@ -167,7 +167,7 @@ c = Coordinates()
     * end_latitude_scope:结束纬度，小于90
 
 ```python
-from data_verification.coordinates import Coordinates
+from data_verification.public.coordinates import Coordinates
 
 c = Coordinates()
 c.verify_latitude(50, 40, 80)
@@ -182,7 +182,7 @@ c.verify_latitude(50, 40, 80)
     * end_longitude_scope:结束经度，小于180
 
 ```python
-from data_verification.coordinates import Coordinates
+from data_verification.public.coordinates import Coordinates
 
 c = Coordinates()
 c.verify_longitude(50, 40, 80)
@@ -200,7 +200,7 @@ c.verify_longitude(50, 40, 80)
     * end_longitude_scope:结束经度，小于180
 
 ```python
-from data_verification.coordinates import Coordinates
+from data_verification.public.coordinates import Coordinates
 
 c = Coordinates()
 c.verify_coordinates(50, 40, 80, 50, 40, 80)
@@ -213,7 +213,7 @@ c.verify_coordinates(50, 40, 80, 50, 40, 80)
     * latitude:纬度
 
 ```python
-from data_verification.coordinates import Coordinates
+from data_verification.public.coordinates import Coordinates
 
 c = Coordinates()
 c.verify_china_latitude(50)
@@ -226,7 +226,7 @@ c.verify_china_latitude(50)
     * longitude:经度
 
 ```python
-from data_verification.coordinates import Coordinates
+from data_verification.public.coordinates import Coordinates
 
 c = Coordinates()
 c.verify_china_longitude(50)
@@ -240,7 +240,7 @@ c.verify_china_longitude(50)
     * longitude:经度
 
 ```python
-from data_verification.coordinates import Coordinates
+from data_verification.public.coordinates import Coordinates
 
 c = Coordinates()
 c.verify_china_coordinates(50, 50)
@@ -253,7 +253,7 @@ c.verify_china_coordinates(50, 50)
     * latitude:纬度
 
 ```python
-from data_verification.coordinates import Coordinates
+from data_verification.public.coordinates import Coordinates
 
 c = Coordinates()
 c.verify_global_latitude(50)
@@ -266,7 +266,7 @@ c.verify_global_latitude(50)
     * longitude:经度
 
 ```python
-from data_verification.coordinates import Coordinates
+from data_verification.public.coordinates import Coordinates
 
 c = Coordinates()
 c.verify_global_longitude(50)
@@ -280,7 +280,7 @@ c.verify_global_longitude(50)
     * longitude:经度
 
 ```python
-from data_verification.coordinates import Coordinates
+from data_verification.public.coordinates import Coordinates
 
 c = Coordinates()
 c.verify_global_coordinates(50, 50)
@@ -297,7 +297,7 @@ pdv = PublicDataVerification()
 或者
 
 ```python
-from data_verification.decode import Decode
+from data_verification.public.decode import Decode
 
 d = Decode()
 ```
@@ -310,7 +310,7 @@ d = Decode()
     * encoding: 编码类型
 
 ```python
-from data_verification.decode import Decode
+from data_verification.public.decode import Decode
 
 d = Decode()
 d.decode("asd", 'utf-8')
@@ -327,7 +327,7 @@ pdv = PublicDataVerification()
 或者
 
 ```python
-from data_verification.domain import Domain
+from data_verification.public.domain import Domain
 
 d = Domain()
 ```
@@ -340,7 +340,7 @@ d = Domain()
     * valid_values: 有效值的列表
 
 ```python
-from data_verification.domain import Domain
+from data_verification.public.domain import Domain
 
 d = Domain()
 d.enum_domain_check("asd", 'utf-8')
@@ -354,7 +354,7 @@ d.enum_domain_check("asd", 'utf-8')
     * encoding_rule: 编码规则函数，返回布尔值
 
 ```python
-from data_verification.domain import Domain
+from data_verification.public.domain import Domain
 
 
 def check(c):
@@ -374,7 +374,7 @@ d.encoded_domain_check("a1d", check)
     * condition: 条件函数，接收字典中的值作为参数，返回布尔值。(可选)
 
 ```python
-from data_verification.domain import Domain
+from data_verification.public.domain import Domain
 
 d = Domain()
 d.dictionary_domain_check("asd", {"asd": 2, "as": 2})
@@ -388,7 +388,7 @@ d.dictionary_domain_check("asd", {"asd": 2, "as": 2})
     * enum_dict: 键值对集合，其中值是一个包含有效枚举值的列表
 
 ```python
-from data_verification.domain import Domain
+from data_verification.public.domain import Domain
 
 d = Domain()
 d.dictionary_enum_domain_check("asd", {"asd": 2, "as": 2})
@@ -405,7 +405,7 @@ pdv = PublicDataVerification()
 或者
 
 ```python
-from data_verification.email import Email
+from data_verification.public.email import Email
 
 e = Email()
 ```
@@ -417,7 +417,7 @@ e = Email()
     * email: 被验证邮箱
 
 ```python
-from data_verification.email import Email
+from data_verification.public.email import Email
 
 e = Email()
 e.verify_email_format("aaa@aa.com")
@@ -434,7 +434,7 @@ pdv = PublicDataVerification()
 或者
 
 ```python
-from data_verification.empty import Empty
+from data_verification.public.empty import Empty
 
 e = Empty()
 ```
@@ -446,7 +446,7 @@ e = Empty()
     * value: 要检查的值
 
 ```python
-from data_verification.empty import Empty
+from data_verification.public.empty import Empty
 
 e = Empty()
 e.is_empty("")
@@ -459,10 +459,36 @@ e.is_empty("")
     * value: 要检查的值
 
 ```python
-from data_verification.empty import Empty
+from data_verification.public.empty import Empty
 
 e = Empty()
 e.is_not_empty("")
+```
+
+### empty_in
+
+* 判断数组中是否包含None或者空字符串
+* 携带一个参数
+    * lst: 被验证数组
+
+```python
+from data_verification.public.empty import Empty
+
+e = Empty()
+e.empty_in([""])
+```
+
+### empty_not_in
+
+* 判断数组中是否不包含None或者空字符串
+* 携带一个参数
+    * lst: 被验证数组
+
+```python
+from data_verification.public.empty import Empty
+
+e = Empty()
+e.empty_not_in([""])
 ```
 
 ## 身份证检验:IDNumber,IDNumberAsync
@@ -476,7 +502,7 @@ pdv = PublicDataVerification()
 或者
 
 ```python
-from data_verification.id_number import IDNumber
+from data_verification.public.id_number import IDNumber
 
 idn = IDNumber()
 ```
@@ -490,7 +516,7 @@ idn = IDNumber()
     * check_codes: 校验码映射表
 
 ```python
-from data_verification.id_number import IDNumber
+from data_verification.public.id_number import IDNumber
 
 idn = IDNumber()
 idn.verify_id_number("512345678941253678")
@@ -507,7 +533,7 @@ pdv = PublicDataVerification()
 或者
 
 ```python
-from data_verification.ip_address import IPAddress
+from data_verification.public.ip_address import IPAddress
 
 ipa = IPAddress()
 ```
@@ -519,7 +545,7 @@ ipa = IPAddress()
     * mac_address: 被验证的Mac地址
 
 ```python
-from data_verification.ip_address import IPAddress
+from data_verification.public.ip_address import IPAddress
 
 ipa = IPAddress()
 ipa.verify_mac_address("")
@@ -532,7 +558,7 @@ ipa.verify_mac_address("")
     * ip_address: 被验证的IPv4地址
 
 ```python
-from data_verification.ip_address import IPAddress
+from data_verification.public.ip_address import IPAddress
 
 ipa = IPAddress()
 ipa.verify_ipv4("")
@@ -545,7 +571,7 @@ ipa.verify_ipv4("")
     * ip_address: 被验证的IPv6地址
 
 ```python
-from data_verification.ip_address import IPAddress
+from data_verification.public.ip_address import IPAddress
 
 ipa = IPAddress()
 ipa.verify_ipv6("")
@@ -558,7 +584,7 @@ ipa.verify_ipv6("")
     * ip_address: 被验证的IPv4或IPv6地址
 
 ```python
-from data_verification.ip_address import IPAddress
+from data_verification.public.ip_address import IPAddress
 
 ipa = IPAddress()
 ipa.verify_ip_address("")
@@ -575,7 +601,7 @@ pdv = PublicDataVerification()
 或者
 
 ```python
-from data_verification.number import Number
+from data_verification.public.number import Number
 
 n = Number()
 ```
@@ -590,7 +616,7 @@ n = Number()
     * pattern: 区间判断类型默认为0，0：前闭后闭，1：前闭后开，2：前开后闭，3：前开后开
 
 ```python
-from data_verification.number import Number
+from data_verification.public.number import Number
 
 n = Number()
 n.number_range(5, 1, 6)
@@ -606,7 +632,7 @@ n.number_range(5, 1, 6)
     * decimal_places: 小数点后允许的最大位数，默认为2
 
 ```python
-from data_verification.number import Number
+from data_verification.public.number import Number
 
 n = Number()
 n.check_precision(5.21)
@@ -623,7 +649,7 @@ pdv = PublicDataVerification()
 或者
 
 ```python
-from data_verification.organization import Organization
+from data_verification.public.organization import Organization
 
 o = Organization()
 ```
@@ -636,7 +662,7 @@ o = Organization()
     * weights: 权重数组
 
 ```python
-from data_verification.organization import Organization
+from data_verification.public.organization import Organization
 
 o = Organization()
 o.verify_organization_code("5445sd545")
@@ -653,7 +679,7 @@ pdv = PublicDataVerification()
 或者
 
 ```python
-from data_verification.phone_number import PhoneNumber
+from data_verification.public.phone_number import PhoneNumber
 
 pn = PhoneNumber()
 ```
@@ -665,7 +691,7 @@ pn = PhoneNumber()
     * phone_number: 被验证手机号
 
 ```python
-from data_verification.phone_number import PhoneNumber
+from data_verification.public.phone_number import PhoneNumber
 
 pn = PhoneNumber()
 pn.verify_mobile_number("12345678941")
@@ -678,7 +704,7 @@ pn.verify_mobile_number("12345678941")
     * phone_number: 被验证电话号
 
 ```python
-from data_verification.phone_number import PhoneNumber
+from data_verification.public.phone_number import PhoneNumber
 
 pn = PhoneNumber()
 pn.verify_fixed_line_number("2255-554145264")
@@ -691,7 +717,7 @@ pn.verify_fixed_line_number("2255-554145264")
     * phone_number: 被验证移动手机号或固定电话号
 
 ```python
-from data_verification.phone_number import PhoneNumber
+from data_verification.public.phone_number import PhoneNumber
 
 pn = PhoneNumber()
 pn.verify_phone_number("12345678941")
@@ -708,7 +734,7 @@ pdv = PublicDataVerification()
 或者
 
 ```python
-from data_verification.postal import Postal
+from data_verification.public.postal import Postal
 
 p = Postal()
 ```
@@ -724,7 +750,7 @@ p = Postal()
       PL-波兰，PT-葡萄牙，RO-罗马尼亚，SG-新加坡，ZA-南非，SE-瑞典，TH-泰国，TR-土耳其，UA-乌克兰，VN-越南
 
 ```python
-from data_verification.postal import Postal
+from data_verification.public.postal import Postal
 
 p = Postal()
 p.postal_code("552255", 'CN')
@@ -741,7 +767,7 @@ pdv = PublicDataVerification()
 或者
 
 ```python
-from data_verification.regex import Regex
+from data_verification.public.regex import Regex
 
 r = Regex()
 ```
@@ -754,7 +780,7 @@ r = Regex()
     * pattern: 正则表达式
 
 ```python
-from data_verification.regex import Regex
+from data_verification.public.regex import Regex
 
 r = Regex()
 r.regex("552255", 'CN')
@@ -771,7 +797,7 @@ pdv = PublicDataVerification()
 或者
 
 ```python
-from data_verification.scc import SCC
+from data_verification.public.scc import SCC
 
 scc = SCC()
 ```
@@ -785,7 +811,7 @@ scc = SCC()
     * check_code_map: 校验码映射表
 
 ```python
-from data_verification.scc import SCC
+from data_verification.public.scc import SCC
 
 scc = SCC()
 scc.verify_uscc("")
@@ -800,7 +826,7 @@ scc.verify_uscc("")
     * check_code_map: 校验码映射表
 
 ```python
-from data_verification.scc import SCC
+from data_verification.public.scc import SCC
 
 scc = SCC()
 scc.verify_cscc("")
@@ -817,7 +843,7 @@ pdv = PublicDataVerification()
 或者
 
 ```python
-from data_verification.time import Time
+from data_verification.public.time import Time
 
 t = Time()
 ```
@@ -833,7 +859,7 @@ t = Time()
     * pattern: 区间判断类型，0：前闭后闭，1：前闭后开，2：前开后闭，3：前开后开
 
 ```python
-from data_verification.time import Time
+from data_verification.public.time import Time
 
 t = Time()
 t.time_range("", '', '')
@@ -850,7 +876,7 @@ t.time_range("", '', '')
     * pattern: 区间判断类型，0：前闭后闭，1：前闭后开，2：前开后闭，3：前开后开
 
 ```python
-from data_verification.time import Time
+from data_verification.public.time import Time
 
 t = Time()
 t.datetime_range("", '', '')
@@ -866,7 +892,7 @@ t.datetime_range("", '', '')
     * pattern: 区间判断类型，0：前闭后闭，1：前闭后开，2：前开后闭，3：前开后开
 
 ```python
-from data_verification.time import Time
+from data_verification.public.time import Time
 
 t = Time()
 t.timestamp_range("", '', '')
@@ -880,7 +906,7 @@ t.timestamp_range("", '', '')
     * date_format: 日期格式化规则
 
 ```python
-from data_verification.time import Time
+from data_verification.public.time import Time
 
 t = Time()
 t.verify_date("")
@@ -893,7 +919,7 @@ t.verify_date("")
     * timestamp: 被验证的时间戳
 
 ```python
-from data_verification.time import Time
+from data_verification.public.time import Time
 
 t = Time()
 t.verify_timestamp("")
@@ -908,7 +934,7 @@ t.verify_timestamp("")
     * timeliness_threshold_minutes: 数据被认为是及时的最大分钟数，默认为60分钟
 
 ```python
-from data_verification.time import Time
+from data_verification.public.time import Time
 
 t = Time()
 t.check_timeliness("")
@@ -925,7 +951,7 @@ pdv = PublicDataVerification()
 或者
 
 ```python
-from data_verification.verify_type import VerifyType
+from data_verification.public.verify_type import VerifyType
 
 vt = VerifyType()
 ```
@@ -937,7 +963,7 @@ vt = VerifyType()
     * value: 被验证数据
 
 ```python
-from data_verification.verify_type import VerifyType
+from data_verification.public.verify_type import VerifyType
 
 vt = VerifyType()
 vt.is_bytes("")
@@ -950,7 +976,7 @@ vt.is_bytes("")
     * value: 被验证数据
 
 ```python
-from data_verification.verify_type import VerifyType
+from data_verification.public.verify_type import VerifyType
 
 vt = VerifyType()
 vt.is_bool("")
@@ -963,7 +989,7 @@ vt.is_bool("")
     * value: 被验证数据
 
 ```python
-from data_verification.verify_type import VerifyType
+from data_verification.public.verify_type import VerifyType
 
 vt = VerifyType()
 vt.is_str("")
@@ -976,7 +1002,7 @@ vt.is_str("")
     * value: 被验证数据
 
 ```python
-from data_verification.verify_type import VerifyType
+from data_verification.public.verify_type import VerifyType
 
 vt = VerifyType()
 vt.is_float("")
@@ -989,7 +1015,7 @@ vt.is_float("")
     * value: 被验证数据
 
 ```python
-from data_verification.verify_type import VerifyType
+from data_verification.public.verify_type import VerifyType
 
 vt = VerifyType()
 vt.is_int("")
@@ -1006,7 +1032,7 @@ pdv = PublicDataVerification()
 或者
 
 ```python
-from data_verification.unique import Unique
+from data_verification.public.unique import Unique
 
 u = Unique()
 ```
@@ -1018,7 +1044,7 @@ u = Unique()
     * lst: 要检查的列表
 
 ```python
-from data_verification.unique import Unique
+from data_verification.public.unique import Unique
 
 u = Unique()
 u.is_unique("")

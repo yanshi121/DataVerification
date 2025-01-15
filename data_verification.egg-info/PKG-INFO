@@ -1,6 +1,6 @@
 Metadata-Version: 2.2
 Name: data_verification
-Version: 0.0.1
+Version: 0.0.2
 Summary: 数据检验的工具
 Home-page: https://github.com/yanshi121/DataVerification
 Author: 39
@@ -35,7 +35,10 @@ Dynamic: summary
 * DataVerification是用于数据检验的工具
 * 包含对多种数据的多种验证:身份证、社会信用码、时间、数字、geo数据、邮箱、电话、邮编、网络地址等
 * 提供同步检验方法和异步检验方法，通过调用类来实现，异步方法在异步类中，异步类以Async结尾
-
+* 安装DataVerification
+```
+pip install data-verification
+```
 ## 主入口:data_verification
 
 * 方法主入口，包含所有检验方法
@@ -52,8 +55,9 @@ gdva = dv.GeoDataValidatorAsync("", "")
 * 所有基类方法可从相应文件导入，例如
 
 ```python
-from data_verification.id_number import IDNumber
-from data_verification.id_number import IDNumberAsync
+from data_verification.public.id_number import IDNumber
+from data_verification.public.id_number import IDNumberAsync
+
 idn = IDNumber()
 idna = IDNumberAsync()
 ```

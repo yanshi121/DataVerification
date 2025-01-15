@@ -1,23 +1,6 @@
 import asyncio
-from data_verification.scc import SCC, SCCAsync
-from data_verification.time import Time, TimeAsync
-from data_verification.empty import Empty, EmptyAsync
-from data_verification.email import Email, EmailAsync
-from data_verification.regex import Regex, RegexAsync
-from data_verification.unique import Unique, UniqueAsync
-from data_verification.postal import Postal, PostalAsync
-from data_verification.decode import Decode, DecodeAsync
-from data_verification.number import Number, NumberAsync
-from data_verification.compare import Compare, CompareAsync
-from data_verification.id_number import IDNumber, IDNumberAsync
-from data_verification.ip_address import IPAddress, IPAddressAsync
-from data_verification.verify_type import VerifyType, VerifyTypeAsync
-from data_verification.coordinates import Coordinates, CoordinatesAsync
-from data_verification.phone_number import PhoneNumber, PhoneNumberAsync
-from data_verification.organization import Organization, OrganizationAsync
-from data_verification.admin_division import AdminDivision, AdminDivisionAsync
-from data_verification.geo import PointDataValidator, LineDataValidator, PolygonDataValidator
-from data_verification.geo import PointTopologyValidator, LineTopologyValidator, PolygonTopologyValidator
+from data_verification.public import *
+from data_verification.geo import *
 
 
 class PublicDataVerification(Regex, SCC, Number, Email, IDNumber, Organization, Compare, VerifyType, Coordinates, Time,
